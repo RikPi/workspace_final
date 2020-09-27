@@ -7,4 +7,3 @@ dependencies:
  - scipy
  - ipywidgets
  - IPython
- - mpl_toolkits
