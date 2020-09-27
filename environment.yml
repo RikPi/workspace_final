@@ -1,0 +1,10 @@
+name: Notebook_Lorenz
+
+
+dependencies:
+ - numpy
+ - matplotlib
+ - scipy
+ - ipywidgets
+ - IPython
+ - mpl_toolkits
