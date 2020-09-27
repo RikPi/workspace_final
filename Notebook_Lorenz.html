@@ -14258,7 +14258,7 @@ $$\frac{dx}{dt}=\sigma(y-x)\qquad\frac{dy}{dt}=x(\rho-z)-y\qquad\frac{dz}{dt}=xy
 Le equazioni di Lorenz specificano, per ogni valore dei parametri, un campo vettoriale $f: \mathbb{R}^3\rightarrow\mathbb{R}^3$ che non dipende dal tempo. Questo campo vettoriale determina un flusso $\phi_t(x)$ dove $t\in\mathbb{R}$ e $x\in\mathbb{R}^3$.<br/>
 Le equazioni di Lorenz sono solitamente scritte nella forma $$\frac{d\phi}{dt}=f(\phi_t(x))$$
 Il flusso $\phi$ soddisfa le condizioni: $\phi_0(x)=x, \quad \phi_s(\phi_t(x))=\phi_{s+t}(x)$ e $\phi$ è continuo sia rispetto a $x$, sia rispetto a $t$.<br/>
-C'è da dire che le equazioni di Lorenz non rappresentano un modello realistico del problema fluidodinamico se il parmetro $\rho$ è lontano dal valore $1$. Dato il grande interesse generato dalle equazioni di Lorenz, si sono iniziati a cercare problemi reali che potevano essere modellizati accuratamente con equazioni di Lorenz e $\rho$ molto maggiore di $1$. Haken (1975) ha derivato le equazioni da un problema riguardante irregolarità nei laser; Malkus, Yorke e Yorke (1978) hanno trovato le equazioni studiando un problema di convezione in una regione toroidale. Malkus ha costruito una ruota mossa dall'acqua che si comporta in modo simile al sistema di Lorenz e dalla quale si possono derivare le equazioni del moto, corrispondenti a quelle di Lorenz. <br/>
+C'è da dire che le equazioni di Lorenz non rappresentano un modello realistico del problema fluidodinamico se il parametro $\rho$ è lontano dal valore $1$. Dato il grande interesse generato dalle equazioni di Lorenz, si sono iniziati a cercare problemi reali che potevano essere modellizati accuratamente con equazioni di Lorenz e $\rho$ molto maggiore di $1$. Haken (1975) ha derivato le equazioni da un problema riguardante irregolarità nei laser; Malkus, Yorke e Yorke (1978) hanno trovato le equazioni studiando un problema di convezione in una regione toroidale. Malkus ha costruito una ruota mossa dall'acqua che si comporta in modo simile al sistema di Lorenz e dalla quale si possono derivare le equazioni del moto, corrispondenti a quelle di Lorenz. <br/>
 Qua sotto è rappresentata la traiettoria con i classici parametri per il comportamento caotico $\sigma=10$, $\beta=\frac{8}{3}$ e $\rho=28$ (Fig.1):</p>
 
 </div>
@@ -34178,7 +34178,7 @@ z
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Tramite Python ho generato due immagini che fanno capire come sia solo una questione di tempo che le traiettorie generate da due diverse condizioni iniziali divergano in modo pesante ed evidente.</p>
+<p>Tramite Python sono state generate due immagini che fanno capire come sia solo una questione di tempo che le traiettorie generate da due diverse condizioni iniziali divergano in modo pesante ed evidente.</p>
 <p>Nell'immagine della simulazione sopra, posso notare i primi momenti in cui le due traiettorie iniziano a divergere.<br/>
 Nell'immagine sotto, invece, si può notare che pur avendo le stesse condizioni iniziali su $x, y$ e una differenza percentuale di $0,0000095\%$ su $z$, le due traiettorie divergono fino ad essere attratte da due diversi punti, una da $C_1$ e l'altra da $C_2$. I punti blu e rosso rappresentano i risultati dell'ultima iterazione del sistema del rispettivo colore.</p>
 
@@ -43767,6 +43767,8 @@ z
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
     <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x_t</span>
+
+<span class="c1">#3. CREAZIONE DELL&#39;AMBIENTE INTERATTIVO</span>
 <span class="n">w</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">solve_lorenz</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">angle</span><span class="o">=</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">360.</span><span class="p">),</span> <span class="n">max_time</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">),</span> <span class="n">sigma</span><span class="o">=</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">),</span> <span class="n">rho</span><span class="o">=</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
 </pre></div>
@@ -43792,9 +43794,9 @@ z
 
 
 
-<div id="51b81fe4-2098-47a4-98bb-4fb504c36721" class="jupyter-widgets jp-OutputArea-output ">
+<div id="a8fed7ef-d6eb-4666-84d5-8128fae737df" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('51b81fe4-2098-47a4-98bb-4fb504c36721');
+var element = document.getElementById('a8fed7ef-d6eb-4666-84d5-8128fae737df');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"version_major": 2, "version_minor": 0, "model_id": "df39d41ff10d481bbd8285cebba86334"}
